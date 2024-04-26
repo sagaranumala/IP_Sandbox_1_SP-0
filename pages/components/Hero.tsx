@@ -22,7 +22,7 @@ import Party from './ReferenceData/CustomerData/Party';
 export default function Hero() {
     const [page,setPage]=useState(0);
 
-    const Pages: any[]=[<Dashboard/>,<Profile/>,<Calender/>,<Region/>,<Country/>,<Currency/>,<MOP/>,<MOPCluster/>,<MOPPreference/>,<MembershipDirectory/>,<ClearingPersona/>,<MembershipProperty/>,<ClearingProperty/>,<Account/>,<Party/>,<Instructions/>,<Transactions/>]
+    const Pages: any[]=[<Dashboard key={0}/>,<Profile key={1}/>,<Calender key={2}/>,<Region key={3}/>,<Country key={4}/>,<Currency key={5}/>,<MOP key={6}/>,<MOPCluster key={7}/>,<MOPPreference key={8}/>,<MembershipDirectory key={9}/>,<ClearingPersona key={10}/>,<MembershipProperty key={11}/>,<ClearingProperty key={12}/>,<Account key={13}/>,<Party key={14}/>,<Instructions key={15}/>,<Transactions key={16}/>]
     const PageDisplay=()=>{
         return Pages[page];
     }
